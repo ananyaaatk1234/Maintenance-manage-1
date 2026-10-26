@@ -1,0 +1,197 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Maintenance System</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            position: fixed;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar p {
+            padding: 10px;
+        }
+
+        .main {
+            margin-left: 260px;
+            padding: 30px;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 180px;
+            border-radius: 8px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .alert {
+            background: #ffe0e0;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            margin-top: 25px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>⚙ Maintenance</h2>
+
+        <p>🏠 Dashboard</p>
+        <p>🏭 Machines</p>
+        <p>🔧 Maintenance</p>
+        <p>📋 Work Orders</p>
+        <p>📊 Reports</p>
+        <p>👤 Users</p>
+
+    </div>
+
+
+    <div class="main">
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Total Machines</p>
+                <div class="number">20</div>
+            </div>
+
+            <div class="card">
+                <p>Healthy</p>
+                <div class="number">15</div>
+            </div>
+
+            <div class="card">
+                <p>Maintenance Due</p>
+                <div class="number">3</div>
+            </div>
+
+            <div class="card">
+                <p>Critical</p>
+                <div class="number">2</div>
+            </div>
+
+        </div>
+
+
+        <div class="alert">
+
+            <h2>🚨 Maintenance Alerts</h2>
+
+            <p>
+                M003 - Lathe Machine:
+                Maintenance due in 2 days
+            </p>
+
+            <p>
+                M007 - CNC Machine:
+                Maintenance overdue
+            </p>
+
+        </div>
+
+
+        <h2>Machine Overview</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Machine</th>
+                <th>Location</th>
+                <th>Health</th>
+                <th>Running Hours</th>
+                <th>Temperature</th>
+            </tr>
+
+            <tr>
+                <td>M001</td>
+                <td>CNC Machine</td>
+                <td>Factory A</td>
+                <td>🟢 Good</td>
+                <td>1,250</td>
+                <td>62°C</td>
+            </tr>
+
+            <tr>
+                <td>M002</td>
+                <td>Press Machine</td>
+                <td>Factory B</td>
+                <td>🟡 Warning</td>
+                <td>2,840</td>
+                <td>78°C</td>
+            </tr>
+
+            <tr>
+                <td>M003</td>
+                <td>Lathe Machine</td>
+                <td>Factory A</td>
+                <td>🔴 Critical</td>
+                <td>4,210</td>
+                <td>91°C</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
+```
